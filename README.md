@@ -17,5 +17,3 @@ ln -s /var/www/bienfpbx/provision/bien /var/www/fusionpbx/resources/templates/pr
 
 chown www-data.www-data /var/www/fusionpbx/app/bien
 chown www-data.www-data /var/www/fusionpbx/resources/templates/provision/bien
-root@fpbx:/var/www# 
-

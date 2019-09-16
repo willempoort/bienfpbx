@@ -1,0 +1,26 @@
+<Dialing>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="History"/>
+    <Key Type="Switch"/>
+    <Key Type="Line"/>
+    <Key Type="Favorite"/>
+    <Key Type="GPickup"/>
+    <Key Type="DPickup"/>
+    <Key Type="Retrieve"/>
+  </Disable>
+  <Enable>
+    <Key Type="Send"/>
+     <Key Type="Directory" />
+    <Key Type="IME"/>
+    <Key Type="Delete"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Send"/>
+    <Key Type="IME"/>
+     <Key Type="Directory" />
+    <Key Type="Delete"/>
+    <Key Type="Cancel"/>
+  </Default>
+</Dialing>

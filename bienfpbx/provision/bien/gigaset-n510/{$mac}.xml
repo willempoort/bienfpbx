@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ProviderFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="N510.xsd">
+  <Provider>
+<!-- Please enter the correct MAC Address example: 3E2F800E1234
+	 Please enter a Profile name 
+	 If not correct, no setting will be done
+-->
+	<MAC_ADDRESS value="{$mac}"/>
+	<PROFILE_NAME class="string" value="N510"/>	
+
+<!-- Allow access from other networks. -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucB_ACCEPT_FOREIGN_SUBNET" class="symb_item" value='"{$gigaset_ACCEPT_FOREIGN_SUBNET}"'/>
+    <SYMB_ITEM ID="BS_IP_Data3.aucS_NETWORK_DEVICENAME" class="symb_item" value='"{$device_label}"'/> 
+    
+<!-- VoIP Account 1 example -->
+        
+<!-- WEB-UI: Settings - Telephony - Connections - Connection Name or Number -->
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[0].aucAccountName[0]" class="symb_item" value='"{$display_name_1}"'/>
+    
+<!-- VoIP account 1, example config -->
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_1" class="symb_item" value='"{$display_name_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME" class="symb_item" value='"{$display_name_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID" class="symb_item" value='"{$auth_id_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD" class="symb_item" value='"{$user_password_1}'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID" class="symb_item" value='"{$auth_id_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN" class="symb_item" value='"{$server_address_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER" class="symb_item" value='"{$server_address_1}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER" class="symb_item" value="0xf0"/>
+    
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_CODEC_PREFERENCES" class="symb_item" value="0"/>
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER" class="symb_item" value="5,1,255,255,255"/>   
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_1" class="symb_item" value="0x1"/>  
+
+<!-- VoIP Account 2 example, Account 3-6 can be added copy account 2 data and increase the account number -->
+
+<!-- WEB-UI: Settings - Telephony - Connections - Connection Name or Number -->
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[1].aucAccountName[0]" class="symb_item" value='"{$display_name_2}"'/>
+    
+<!-- VoIP account 2, example config -->  
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_2" class="symb_item" value='"{$display_name_2}"'/>
+  	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME_2" class="symb_item" value='"{$display_name_2}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID_2" class="symb_item" value='"{$auth_id_2}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD_2" class="symb_item" value='"{$user_password_2}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID_2" class="symb_item" value='"{$auth_id_2}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_2" class="symb_item" value='"{$server_address_2}"'/>	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_2" class="symb_item" value='"{$server_address_2}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_2" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_2" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_2" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME_2" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_2" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_2" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_2" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_2" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_2" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_2" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_2" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_2" class="symb_item" value="0xf0"/>
+
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_2" class="symb_item" value="5,1,255,255,255"/> 
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_2" class="symb_item" value="0x1"/> 
+
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[2].aucAccountName[0]" class="symb_item" value='"{$display_name_3}"'/>
+<!-- VoIP account 3 -->  
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_3" class="symb_item" value='"{$auth_id_3}"'/>
+  	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME_3" class="symb_item" value='"{$display_name_3}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID_3" class="symb_item" value='"{$auth_id_3}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD_3" class="symb_item" value='"{$user_password_3}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID_3" class="symb_item" value='"{$auth_id_3}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_3" class="symb_item" value='"{$server_address_3}"'/>	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_3" class="symb_item" value='"{$server_address_3}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_3" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_3" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_3" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME_3" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_3" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_3" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_3" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_3" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_3" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_3" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_3" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_3" class="symb_item" value="0xf0"/>
+
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_3" class="symb_item" value="5,1,255,255,255"/> 
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_3" class="symb_item" value="0x1"/> 
+
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[3].aucAccountName[0]" class="symb_item" value='"{$display_name_4}"'/>
+<!-- VoIP account 4 -->  
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_4" class="symb_item" value='"{$auth_id_4}"'/>
+  	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME_4" class="symb_item" value='"{$display_name_4}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID_4" class="symb_item" value='"{$auth_id_4}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD_4" class="symb_item" value='"{$user_password_4}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID_4" class="symb_item" value='"{$auth_id_4}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_4" class="symb_item" value='"{$server_address_4}"'/>	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_4" class="symb_item" value='"{$server_address_4}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_4" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_4" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_4" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME_4" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_4" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_4" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_4" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_4" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_4" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_4" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_4" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_4" class="symb_item" value="0xf0"/>
+
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_4" class="symb_item" value="5,1,255,255,255"/> 
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_4" class="symb_item" value="0x1"/> 
+    
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[4].aucAccountName[0]" class="symb_item" value='"{$display_name_5}"'/>
+    <!-- VoIP account 5 -->  
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_5" class="symb_item" value='"{$auth_id_5}"'/>
+  	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME_5" class="symb_item" value='"{$display_name_5}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID_5" class="symb_item" value='"{$auth_id_5}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD_5" class="symb_item" value='"{$user_password_5}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID_5" class="symb_item" value='"{$auth_id_5}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_5" class="symb_item" value='"{$server_address_5}"'/>	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_5" class="symb_item" value='"{$server_address_5}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_5" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_5" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_5" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME_5" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_5" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_5" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_5" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_5" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_5" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_5" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_5" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_5" class="symb_item" value="0xf0"/>
+
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_5" class="symb_item" value="5,1,255,255,255"/> 
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_5" class="symb_item" value="0x1"/> 
+	
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[5].aucAccountName[0]" class="symb_item" value='"{$display_name_6}"'/>
+    
+    <!-- VoIP account 6 -->  
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_ACCOUNT_NAME_6" class="symb_item" value='"{$auth_id_6}"'/>
+  	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME_6" class="symb_item" value='"{$display_name_6}"'/>
+	<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID_6" class="symb_item" value='"{$auth_id_6}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD_6" class="symb_item" value='"{$user_password_6}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID_6" class="symb_item" value='"{$auth_id_6}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_6" class="symb_item" value='"{$server_address_6}"'/>	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_6" class="symb_item" value='"{$server_address_6}"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_6" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_6" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_6" class="symb_item" value='""'/>
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PROVIDER_NAME_6" class="symb_item" value='"Bien"'/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_6" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_6" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_6" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_6" class="symb_item" value="0xd96"/>
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_6" class="symb_item" value="0x0"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_6" class="symb_item" value="0x13c4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_6" class="symb_item" value="0xb4"/>
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_6" class="symb_item" value="0xf0"/>
+
+<!-- Auto Provisioning - Selected Codec settings 0x00(G.711ulaw),0x01(G.711alaw),0x02(G.726),0x03(G.729),0x05(G722) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_6" class="symb_item" value="5,1,255,255,255"/> 
+
+<!-- WEB UI: Settings - Telephony - Connections - Active
+     Enable the SIP account -->
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_6" class="symb_item" value="0x1"/> 
+    
+<!-- Autoprovisioning - Account - Label? Change the name of handset 1 -->	
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[0].aucTlnName[0]" class="symb_item" value='"{$auth_id_1}-{$display_name_1}"'/>
+    <!-- Example to change the name of Handset 2 	-->
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[1].aucTlnName[0]" class="symb_item" value='"{$auth_id_2}-{$display_name_2}"'/>
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[2].aucTlnName[0]" class="symb_item" value='"{$auth_id_3}-{$display_name_3}"'/>
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[3].aucTlnName[0]" class="symb_item" value='"{$auth_id_4}-{$display_name_4}"'/>
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[4].aucTlnName[0]" class="symb_item" value='"{$auth_id_5}-{$display_name_5}"'/>
+	<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[5].aucTlnName[0]" class="symb_item" value='"{$auth_id_6}-{$display_name_6}"'/>
+        
+<!-- Change DTMF to RFC2833 compatible with RFC4733 -->    
+    <SYMB_ITEM ID="BS_IP_Data1.ucB_DTMF_TX_MODE_AUTO" class="symb_item" value="0"/>
+    <SYMB_ITEM ID="BS_IP_Data1.ucI_DTMF_TX_MODE_BITS" class="symb_item" value="2"/>
+    
+	
+<!-- Change the Voicemail number to *2 -->	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_1" class="symb_item" value='"*97"'/>
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_2" class="symb_item" value='"*2"'/>
+    
+<!-- Autoprovisioning - Features - Voicemail -->    
+    <SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_1" class="symb_item" value="0x1"/>
+    <SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_2" class="symb_item" value="0x1"/>
+
+<!-- Needed to enable Provisioning, After Reboot -->	
+	<SYMB_ITEM ID="BS_IP_Data.ucB_AUTO_UPDATE_PROFILE" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_IP_Data3.ucI_ONESHOT_PROVISIONING_MODE_1" class="symb_item" value="0x1"/>
+    
+<!-- Enable Session timer minimum value is 90 seconds -->    
+    <SYMB_ITEM ID="BS_VOIP_Data.astVoipProviders[0].ulSessionRefresh_MIN_SE" class="symb_item" value="90"/>
+    
+<!-- Increase lenght handset name on display -->    
+    <SYMB_ITEM ID="BS_LM_AppCfg.bit.bHasIdleTextInternalName" class="symb_item" value="1"/>
+
+<!-- WEB UI: Settings - Management - Firmware update - Data Server
+     Redirect device always to own provisioning Server so you are in control for example: Firmware updates 	
+	<SYMB_ITEM ID="BS_IP_Data1.aucS_DATA_SERVER[0]" class="symb_item" value='""'/> -->
+
+<!-- WEB UI: Settings - Telephony - Advanced VoIP Settings - Transfer Call by On Hook
+     Call Transfer by ending the call -->	
+	<SYMB_ITEM ID="BS_IP_Data1.ucB_CT_AFTER_ON_HOOK" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_CUSTOM_ORG.bit.bEct" class="symb_item" value="0x1"/>
+
+<!-- WEB UI: Settings - Management - Local Settings - Tone Selection
+	 International=0, US=1, CH=2, AUS=4, ES=6, FR=7, UK=8, NL=9, PL=10, Russia=11, DE=12, IT=13 -->
+	<SYMB_ITEM ID="BS_AE_SwConfig.ucCountryCodeTone" class="symb_item" value="9"/>
+    
+<!-- Http language of the device
+	 English=0x1,German=0x2,Spanish=0x4,Italian=0x7,French=0x9,Dutch=0xa,Turkish=0x10,Polski=0x11 -->	
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_HTTPLANGUAGE" class="symb_item" value="0x1"/> 
+
+<!-- WEB UI: Settings - Management - Date&Time  
+	 Time Country: NL=0x30, UK=0x4A, DE=0x19, FR=0x18 --> 	
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_TIME_COUNTRY" class="symb_item" value="0x30"/>   
+o
+<!-- WEB UI: Settings - Management - Local Settings - Select Country optimum setting for behind other platformen is "Other country"--> 
+	<SYMB_ITEM ID="BS_IP_Data1.ucI_DIALING_PLAN_COUNTRY_ID" class="symb_item" value="48"/>    
+    
+<!-- Autoprovisioning - Preference - Admin Password. The default setting for the PIN is 0000 (0x00,0x00). Enter a new 4-digit 
+    system PIN for the base station - four digits from 0 to 9. Example: PIN='1234' please enter '0x12,0x34' -->
+    <SYMB_ITEM ID="BS_CUSTOM.aucKdsPin[0]" class="symb_item" value="0x00,0x00"/>    
+    
+<!-- Autoprovisioning - Preference - Time Zone: 
+     0x00(GMT-12),0x01(GMT-11),0x02(GMT-10),0x03(GMT-9),0x04(GMT-8),0x07(GMT-7),0x09(GMT-6),0x0d(GMT-5),0x0f(GMT-4),0x15(GMT-3),0x16(GMT-2),
+     0x18(GMT-1),0x1a(GMT),0x1b(GMT+1),0x20(GMT+2),0x28(GMT+3),0x2b(GMT+4),0x2e(GMT+5),0x33(GMT+6),0x37(GMT+7),0x3a(GMT+8),0x3d(GMT+9),0x43(GMT+10) -->    
+	<SYMB_ITEM ID="BS_IP_Data1.uiI_TIME_TIMEZONE" class="symb_item" value="0x1b"/>  
+
+<!-- Autoprovisioning - Preference - Primary NTP server -->    
+    <SYMB_ITEM ID="BS_IP_Data1.aucS_TIME_NTP_SERVER" class="symb_item" value='"cn.pool.ntp.org"'/>
+    
+<!-- Autoprovisioning - Preference - Daylight Saving time: 0x1(enabled),0x0(Disabled) -->
+    <SYMB_ITEM ID="BS_IP_Data1.ucB_TIME_USE_AUTOMATIC_DST" class="symb_item" value="0x1"/>      
+
+<!-- HS assignment Handset 1 connected to SIP account 1, Handset 2 connected to SIP account 2, .. -->
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[0].uiSendMask" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[0].uiReceiveMask" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[0].ucState" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[1].uiSendMask" class="symb_item" value="0x2"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[1].uiReceiveMask" class="symb_item" value="0x2"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[1].ucState" class="symb_item" value="0x1"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[2].uiSendMask" class="symb_item" value="0x4"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[2].uiReceiveMask" class="symb_item" value="0x4"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[2].ucState" class="symb_item" value="0x1"/>	
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[3].uiSendMask" class="symb_item" value="0x8"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[3].uiReceiveMask" class="symb_item" value="0x8"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[3].ucState" class="symb_item" value="0x1"/>	
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[4].uiSendMask" class="symb_item" value="0x10"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[4].uiReceiveMask" class="symb_item" value="0x10"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[4].ucState" class="symb_item" value="0x1"/>	
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[5].uiSendMask" class="symb_item" value="0x20"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[5].uiReceiveMask" class="symb_item" value="0x20"/>
+	<SYMB_ITEM ID="BS_Accounts.astAccounts[5].ucState" class="symb_item" value="0x1"/>
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[6].uiSendMask" class="symb_item" value="0x0"/>
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[6].uiReceiveMask" class="symb_item" value="0x0"/>
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[6].ucState" class="symb_item" value="0x1"/>    
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[7].uiSendMask" class="symb_item" value="0x0"/>
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[7].uiReceiveMask" class="symb_item" value="0x0"/>
+    <SYMB_ITEM ID="BS_Accounts.astAccounts[7].ucState" class="symb_item" value="0x1"/>    
+<!-- end -->
+
+<!-- LDAP settings -->
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].aucDirName[0]" class="symb_item" value='"Phonebook"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].NameFilter[0]" class="symb_item" value='"(|(cn=%)(sn=%))"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].NumberFilter[0]" class="symb_item" value='"(|(telephoneNumber=%)(mobile=%))"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].aucServerURL[0]" class="symb_item" value='""'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].aucBaseDN[0]" class="symb_item" value='"dc=pbx,dc=com"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[0].aucItemAttribute[0]" class="symb_item" value='"givenName"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[1].aucItemAttribute[0]" class="symb_item" value='"sn"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[2].aucItemAttribute[0]" class="symb_item" value='"homePhone"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[3].aucItemAttribute[0]" class="symb_item" value='"telephoneNumber"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[4].aucItemAttribute[0]" class="symb_item" value='"mobile"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[5].aucItemAttribute[0]" class="symb_item" value='"mail"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[6].aucItemAttribute[0]" class="symb_item" value='"none"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[7].aucItemAttribute[0]" class="symb_item" value='"departmentNumber"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[8].aucItemAttribute[0]" class="symb_item" value='"none"'/>
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[9].aucItemAttribute[0]" class="symb_item" value='"none"'/>   
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[10].aucItemAttribute[0]" class="symb_item" value='"none"'/> 
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[11].aucItemAttribute[0]" class="symb_item" value='"none"'/> 
+    <SYMB_ITEM ID="BS_LDAP_Netdirs.astNetdirProvider[0].astNetDirDirectoryItems[12].aucItemAttribute[0]" class="symb_item" value='"none"'/> 
+    <SYMB_ITEM ID="BS_XML_Netdirs.aucActivatedNetdirs[0]" class="symb_item" value="0xa,0x0,"/> 
+    <SYMB_ITEM ID="BS_XML_Netdirs.bNoLookupBuffering" class="symb_item" value="0x1"/>
+    <SYMB_ITEM ID="BS_XML_Netdirs.stAutolookup.aucProviderOrder[0]" class="symb_item" value="0xa"/>
+    
+   <!-- XML phonebook -->
+
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucPassword[0]" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucPrivatePagesDirName[0]" class="symb_item" value='"Persoonlijk"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucProviderName[0]" class="symb_item" value='"Centrale"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucServerURL[0]" class="symb_item" value='"http://{$server_address_1}/app/bien/gigaset.xml.php"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucUsername[0]" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].aucWhitePagesDirName[0]" class="symb_item" value='"Telefoonboek"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bAutolookupCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bEncryptPosts" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bPrivateDirectoryCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bPrivateDirectoryNicknameCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bReverseSearchCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bSearchBusinessCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bSearchPeopleCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].bitfldCap.bSndMacAddress" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[1].ucAuthPossibilities" class="symb_item" value="0x4"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.aucActivatedNetdirs[0]" class="symb_item" value="0x14,0x15,0x28,0x29,0x2a"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.aucAvailableNetdirs[0]" class="symb_item" value="0x14,0x15,0x28,0x29,0x2a"/>
+
+
+
+<!-- Eigen Phonebook Test -->
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucCountryCode[0]" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucPassword[0]" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucPrivatePagesDirName[0]" class="symb_item" value='"Personal"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucProviderName[0]" class="symb_item" value='"System phonebook"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucServerURL[0]" class="symb_item" value='"http://{$server_address_1}/app/bien/gigaset.xml.php"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucUsername[0]" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucWhitePagesDirName[0]" class="symb_item" value='"Internal"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].aucYellowPagesDirName[0]" class="symb_item" value='"Global"'/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bAutolookupCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bEncryptPosts" class="symb_item" value="0x0"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bPrivateDirectoryCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bPrivateDirectoryNicknameCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bReverseSearchCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bSearchBusinessCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bSearchPeopleCap" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].bitfldCap.bSndMacAddress" class="symb_item" value="0x1"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.astNetdirProvider[0].ucAuthPossibilities" class="symb_item" value="0x4"/>
+
+
+
+<!-- end -->
+  </Provider>
+</ProviderFrame>

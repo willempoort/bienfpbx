@@ -1,0 +1,110 @@
+<Talk>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="Mute"/>
+    <Key Type="SWAP"/>
+    <Key Type="NewCall"/>
+    <Key Type="Switch"/>
+    <Key Type="Answer"/>
+    <Key Type="Reject"/>
+    <Key Type="PriHold"/>
+    <Key Type="Park"/>
+    <Key Type="GPark"/>
+  </Disable>
+  <Enable>
+    <Key Type="Transfer"/>
+    <Key Type="Hold"/>
+    <Key Type="Conference"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Transfer"/>
+    <Key Type="Hold"/>
+    <Key Type="Conference"/>
+    <Key Type="Cancel"/>
+  </Default>
+</Talk>
+<Hold>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="Switch"/>
+    <Key Type="Answer"/>
+    <Key Type="Reject"/>
+  </Disable>
+  <Enable>
+    <Key Type="Transfer"/>
+    <Key Type="Resume"/>
+    <Key Type="NewCall"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Transfer"/>
+    <Key Type="Resume"/>
+    <Key Type="NewCall"/>
+    <Key Type="Cancel"/>
+  </Default>
+</Hold>
+<Held>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="Switch"/>
+    <Key Type="Answer"/>
+    <Key Type="Reject"/>
+    <Key Type="NewCall"/>
+  </Disable>
+  <Enable>
+    <Key Type="Empty"/>
+    <Key Type="Empty"/>
+    <Key Type="Empty"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Empty"/>
+    <Key Type="Empty"/>
+    <Key Type="Empty"/>
+    <Key Type="Cancel"/>
+  </Default>
+</Held>
+<PreTrans>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="Directory"/>
+    <Key Type="Switch"/>
+    <Key Type="Send"/>
+  </Disable>
+  <Enable>
+    <Key Type="Transfer"/>
+    <Key Type="Directory"/>
+    <Key Type="Delete"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Transfer"/>
+    <Key Type="Directory"/>
+    <Key Type="Delete"/>
+    <Key Type="Cancel"/>
+  </Default>
+</PreTrans>
+<Conferenced>
+  <Disable>
+    <Key Type="Empty"/>
+    <Key Type="Switch"/>
+    <Key Type="Answer"/>
+    <Key Type="Reject"/>
+    <Key Type="Mute"/>
+    <Key Type="Manager"/>
+    <!--Manager type is only for T4X Series-->
+  </Disable>
+  <Enable>
+    <Key Type="Empty"/>
+    <Key Type="Hold"/>
+    <Key Type="Split"/>
+    <Key Type="Cancel"/>
+  </Enable>
+  <Default>
+    <Key Type="Empty"/>
+    <Key Type="Hold"/>
+    <Key Type="Split"/>
+    <Key Type="Cancel"/>
+  </Default>
+</Conferenced>

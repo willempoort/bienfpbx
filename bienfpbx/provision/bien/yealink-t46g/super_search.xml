@@ -1,0 +1,12 @@
+<root_super_search>
+
+<item enable="1" priority="2" display_name="Local Contacts" id_name="local_directory_search"/>
+<item enable="1" priority="3" display_name="History" id_name="calllog_search"/>
+<item enable="1" priority="1" display_name="Remote Phone book" id_name="remote_directory_search"/>
+<item enable="0" priority="4" display_name="LDAP" id_name="ldap_search"/>
+
+<!--T19 model doesn't support this item. <item id_name="ldap_search" display_name="LDAP" priority="4" enable="0" /> -->
+
+<item enable="0" priority="5" display_name="Network Directories" id_name="Network_directory_search"/>
+
+</root_super_search>

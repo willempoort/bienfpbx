@@ -1,0 +1,64 @@
+/*** SPECIAL MOV INT ***/
+
+h2 {
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+div#waiting ul {
+  border-radius: 42px;
+}
+
+ul#panel > li {
+  border: none;
+}
+
+ul#panel > li#algemeen {
+  clear: both;
+  width: 73.2vw;
+}
+
+ul#panel > li > ul {
+  height: calc(96% - 1.8vw - 1vh - 6px);
+}
+
+ul#panel > li#algemeen > ul > li {
+  width: calc(81% / 9);
+  margin: 0 1%;
+}
+
+ul#panel > li > ul:not(.stats) {
+  width: calc(100% - 6px);
+  border: 3px solid #147cbf;
+  border-radius: 42px;
+}
+
+ul#panel > li#algemeen > ul.stats {
+  display: none;
+} 
+
+ul#panel > li > ul.stats {
+  width: calc(70% + 6px);
+  margin: 0 calc(15% - 3px);
+}
+
+ul#panel > li#receptie > ul:not(.stats) {
+  width: 70%;
+  margin: 15%;
+  height: calc(70% - 1.8vw - 1vh);
+}
+
+ul#panel > li#receptie > ul.stats {
+  margin: -7vh 15% 0 15%;
+  height: auto;
+}
+
+ul#panel > li#receptie > ul:not(.stats) > li {
+  width: 40%;
+  height: 40%;
+  margin: 21% 0 0 0;
+}
+
+ul#panel > li#receptie > ul:not(.stats) > li:first-child {
+  margin-left: 10%;
+}

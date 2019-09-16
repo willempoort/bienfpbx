@@ -6,7 +6,7 @@
 #
 #First clone the repository to the /var/www directory
 cd /var/www
-git clone ssh://github.com/willempoort/bienfpbx
+git clone https://github.com/willempoort/bienfpbx.git
 
 #Make sure the rights are correctly set
 chown -R www-data.www-data /var/www/bienfpbx
